@@ -1,9 +1,12 @@
 export interface User {
+  id?: number;
   name?: string;
+  sex?: string;
   insertTime?: string;
   address?: string;
-  courses?: string;
-  title?: number;
+  courses?: Course[];
+  title?: Title;
+  level?: number;
 }
 export interface Course {
   id?: number;

@@ -1,0 +1,6 @@
+export const UPSTATE_USER = "UPSTATE_USER";
+export const LIST_COURSES = "LIST_COUSES";
+export const LIST_USER_COURSES = "LIST_USER_COURSES";
+
+//getter
+export const GETTER_PERMISSIN = "GETTER_PERMISSIN";

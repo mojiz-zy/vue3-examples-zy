@@ -31,7 +31,7 @@ export default defineComponent({
       userRef.value.insertTime?.replace("T", "  ")
     );
     watch(userRef, (newUser, oldUser) =>
-      alert("用户名被修改为：${newUser.name}")
+      alert(`用户名被修改为：${newUser.name}`)
     );
     return {
       userRef, //推给视图的user的响应式对象

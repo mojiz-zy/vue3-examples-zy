@@ -19,6 +19,43 @@
           </li>
         </ul>
       </li>
+      <li>
+        Composition-API
+        <ul>
+          <li>
+            <router-link to="/example04-01">reactive()</router-link>
+          </li>
+          <li>
+            <router-link to="/example04-02">
+              interface & ref() & computed() & watch()
+            </router-link>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><router-link to="/example06-01">v-models</router-link></li>
+        </ul>
+      </li>
+      <li>
+        Vuex
+        <ul>
+          <li><router-link to="/example07-01">state</router-link></li>
+          <li><router-link to="/example07-02">Mutations</router-link></li>
+          <li><router-link to="/example07-03">Actions</router-link></li>
+          <li><router-link to="/example07-04">Getters</router-link></li>
+        </ul>
+      </li>
+      <li>
+        Passing Data to child component
+        <ul>
+          <li>
+            <router-link to="/example08-01">
+              Example
+            </router-link>
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 </template>
