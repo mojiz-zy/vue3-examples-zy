@@ -37,8 +37,9 @@ const myActions: ActionTree<State, State> = {
     //Action 异步调用同步事件更新state数据的事件
     setTimeout(() => commit(vxt.UPSTATE_USER, data), 2000); //调用muation的UPSTATE_USER事件
   },
-  [vxt.LIST_COURSES]: ({ commit }, data: Course[]) => {
-    setTimeout(() => commit(vxt.LIST_COURSES, data), 2000);
+  [vxt.LIST_COURSES]: ({ commit }) => {
+    const courses = listCourses();
+    setTimeout(() => commit(vxt.LIST_COURSES, courses), 2000);
   }
 };
 

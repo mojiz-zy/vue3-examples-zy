@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>传参</h1>
-    <br>
+    <br />
     <table>
       <tr>
         <td>#</td>
@@ -9,11 +9,11 @@
         <td>creatTime</td>
         <td>operation</td>
       </tr>
-      <tr v-for= "(c,index) of course" :key="index">
-        <td>{{index+1}}</td>
+      <tr v-for="(c, index) of courses" :key="index">
+        <td>{{ index + 1 }}</td>
         <td>{{ c.name }}</td>
         <td>{{ c.creatTime }}</td>
-        <td><editbutton :course="c"></td>  
+        <td><editbutton :courses="c" /></td>
         <!-- 在视图引入子组件，创建新的行时创建子组件，把当前循环元素绑定到/传递到子组件-->
       </tr>
     </table>

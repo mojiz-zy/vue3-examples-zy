@@ -13,7 +13,7 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/example03-sid.studentid/66/homeworkid/33">
+            <router-link to="/example03-sid/studentid/66/homeworkid/33">
               sid:66,hid:1
             </router-link>
           </li>
@@ -53,6 +53,9 @@
             <router-link to="/example08-01">
               Example
             </router-link>
+          </li>
+          <li>
+            <router-link to="/example08-03">New Example</router-link>
           </li>
         </ul>
       </li>

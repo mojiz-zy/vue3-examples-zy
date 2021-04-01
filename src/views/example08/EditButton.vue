@@ -11,7 +11,7 @@
             父元素传入的数据可以在子元素渲染显示，但不能在子元素直接改变，即不能直接双向绑定传入的数据(单向数据流).
           </p>
           <br />
-          <p>从props传入的对象可以直接渲染： {{ props.course?.name }}</p>
+          <p>从props传入的对象可以直接渲染： {{ courses.name }}</p>
           <p>
             双向绑定的时候,需要取出props中的数据，填充至新创建(courseR)的响应式对象里；(类似于先getter出来再setter进去)
             <input v-model="courseR.name" />

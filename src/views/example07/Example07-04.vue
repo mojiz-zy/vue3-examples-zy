@@ -4,16 +4,16 @@
     {{ user.name }} / {{ user.address }}
     <br />
     <p>
-      基于mapGetters辅助函数绑定
-      <br />
-      <span v-if="premission(1)">用户权限为1时显示</span>
-      <span v-if="premission(2)">用户权限为2时显示</span>
-    </p>
-    <p>
       基于setup()绑定
       <br />
       <span v-if="premissionGetter(1)">用户权限为1时显示</span>
       <span v-if="premissionGetter(2)">用户权限为2时显示</span>
+    </p>
+    <p>
+      基于mapGetters辅助函数绑定
+      <br />
+      <span v-if="premission(1)">用户权限为1时显示</span>
+      <span v-if="premission(2)">用户权限为2时显示</span>
     </p>
   </div>
 </template>
@@ -33,7 +33,7 @@ export default defineComponent({
   },
   computed: {
     ...mapState(["user"]),
-    ...mapGetters(["premisson"])
+    ...mapGetters(["premission"])
   }
 });
 </script>
